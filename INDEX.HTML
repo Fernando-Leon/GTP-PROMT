@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Datos 💻</title>
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+
+        <h1>Formulario de Datos Personales</h1>
+        <form>
+            <!-- Obtencion de datos usuario -->
+
+            <!-- OBJETIVOS -->
+            <label for="objetivos">¿Cuales son tus objetivos principales?</label>
+            <select name="objetivo" id="objetivos">
+                <option value="perder peso">Perder peso</option>
+                <option value="ganar masa muscular">Ganar masa muscular</option>
+                <option value="mejorar la salud en general">Mejorar la salud en general</option>
+            </select><br><br>
+
+            <!-- EDAD -->
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="100"><br><br>
+            
+            <!-- PESO -->
+            <label for="peso">Peso (kg):</label>
+            <input type="text" id="peso" name="peso"><br><br>
+            
+            <!-- ESTATURA -->
+            <label for="estatura">Estatura (m):</label>
+            <input type="text" id="estatura" name="estatura"><br><br>
+            
+            <!-- ACTIVIDAD FISICA -->
+
+            <label for="actividad">Actividad Fisica</label>
+            <select name="actividad" id="actividad">
+            <option value="sedentario">Sedentario</option>
+            <option value="ligero">ligero</option>
+            <option value="moderado">Moderado</option>
+            <option value="intenso">Intenso</option>
+            </select><br><br>
+            
+            <!-- GENERO -->
+            <label>Género:</label>
+            <div class="gener-container">
+                <div>
+                    <input type="radio" id="genero-mujer" name="genero" value="Mujer">
+                    <label for="genero-mujer">Mujer</label><br>
+                </div>
+                <div>
+                    <input type="radio" id="genero-hombre" name="genero" value="Hombre">
+                    <label for="genero-hombre">Hombre</label><br><br>
+                </div>
+            </div>
+
+            <!-- Medicacion -->
+            <label for="medicacion">¿Tomas alguna medicacion de forma regular?</label>
+            <input type="text" id="medicacion" name="medicacion"><br><br>
+
+            <!-- Enfermedades o condiciones fisicas -->
+            <label for="enfermedades">¿Tienes alguna enfermedad o condicion fisica?</label>
+            <input type="text" id="enfermedades" name="enfermedades"><br><br>
+
+            
+            <!-- Consumo de agua -->
+            <label for="consumo-agua">¿Cual es tu consumo de agua diario?</label>
+            <input type="text" id="consumo-agua" name="consumo-agua"><br><br>
+
+            <!-- preferencia alimentaria o restricción dietética -->
+            <label for="restricciones-alimenticias">¿Tienes alguna preferencia alimentaria o restricción dietética, ejemplo: vegetarian@, intolerante a la lactosa, etc?</label>
+            <input type="text" id="restricciones-alimenticias" name="restricciones-alimenticias"><br><br>
+
+            <!-- Descrippcion de dieta actual -->
+            <label for="descripcion">Describe tu dieta actual</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10">
+            
+            </textarea><br><br>
+            
+            <div id="btn">Crear dieta</div>
+        </form>
+
+        <p id="promt">
+
+        </p>
+
+        <script src="code.js"></script>
+    </body>
+</html>
